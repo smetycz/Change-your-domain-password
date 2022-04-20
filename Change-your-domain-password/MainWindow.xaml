@@ -1,0 +1,20 @@
+﻿<Window x:Class="Change_your_domain_password.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Change_your_domain_password"
+        mc:Ignorable="d"
+        Title="Change your password!" Height="450" Width="800">
+    <Grid>
+        <PasswordBox x:Name="PW_OldPassword" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top" Width="145" Height="34"/>
+        <PasswordBox x:Name="PW_NewPassword" HorizontalAlignment="Center" Margin="0,232,0,0" VerticalAlignment="Top" Width="144" Height="34"/>
+        <Label Content="Old password:" HorizontalAlignment="Left" Margin="156,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="New password:" HorizontalAlignment="Left" Margin="156,236,0,0" VerticalAlignment="Top"/>
+        <Label Content="Your domain username:" HorizontalAlignment="Left" Margin="111,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Your domain name:" HorizontalAlignment="Left" Margin="111,114,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LB_UserName" Content="Label" HorizontalAlignment="Left" Margin="348,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.105,-0.278"/>
+        <Label x:Name="LB_DomainName" Content="Label" HorizontalAlignment="Left" Margin="348,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.105,-0.278"/>
+        <Button x:Name="BT_ChangePassword" Content="Change password" HorizontalAlignment="Left" Margin="348,314,0,0" VerticalAlignment="Top" Click="BT_ChangePassword_Click"/>
+    </Grid>
+</Window>
